@@ -4,9 +4,91 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Index</title>
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
+    <style>
+        body {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        
+        .content {
+            
+            display: flex;
+            width: 100%;
+            flex-direction: column;
+        }
+        .human {
+            align-items: center;
+            width: 100%;   
+        }
+        .instr {
+            border-style: groove;
+            font-weight: 500;
+            display: flex;
+            justify-content: center;
+        }
+
+        ul {
+            padding: 30px;
+            display: flex;
+            flex-direction: row; 
+            gap: 20px;
+            justify-content: space-evenly;
+
+        }
+
+        li {
+            list-style-type: none;
+        }
+
+        button {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            padding: 5px;
+            margin: 0px;
+        }
+        button#rock {
+            background-color: brown;
+        }
+
+        button#paper {
+            background-color: lightgreen;
+        }
+
+        button#scissors {
+            background-color: orange;
+        }
+
+        .result {
+            
+            font-style: oblique;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .win {
+            
+            color: blue;
+        }
+
+        .final {
+            color: blueviolet;
+        }
+    </style>
 </head>
 <body>
-    
+    <div class="content">
+        <div class="human">
+            <div class="instr">Click a button to play Rock Paper Scissors</div>
+            <ul class="player">
+                <li><button id="rock">Rock</button></li>
+                <li><button id="paper">Paper</button></li>
+                <li><button id="scissors">Scissors</button></li>
+            </ul>
+        </div>
+        <div class="result">
+            
+       
+        </div>
+    </div>
 </body>
 </html>
